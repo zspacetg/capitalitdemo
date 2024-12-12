@@ -1791,7 +1791,7 @@ button {
 /*=========================================
 =            blog details page            =
 =========================================*/
-#blog-details-section {}
+
 
 #blog-details-section .post-info {
 	background-image: -webkit-linear-gradient(bottom, #c8293c, #ff6c40);
@@ -2382,8 +2382,8 @@ button {
 .navbar {
 	background-color: #1F2534;
 	width: 100%;
-	max-width: ;
-	height: 120px;
+
+	height: 85px;
 	padding: 15px;
 	overflow: hidden;
 	margin-bottom: 0px;
@@ -2407,6 +2407,7 @@ button {
 
 .contnav {
 	text-align: center;
+	align-items: center;
 
 }
 
@@ -2415,7 +2416,7 @@ button {
 }
 
 .navbar div a {
-	font-size: 20px;
+
 	text-decoration: none;
 	color: white;
 	position: relative;
@@ -2423,12 +2424,13 @@ button {
 	right: px;
 	display: block;
 	width: 300px;
-	height: 134px;
+	height: 100px;
 }
 
 .contnavwrapper a p {
 	position: relative;
 	top: 52px;
+	font-size: 1px;
 
 }
 
@@ -2439,14 +2441,13 @@ button {
 
 .linkmenu {
 	float: left;
-	margin-left: ;
+
 	position: relative;
 	right: 0px;
-	bottom: 40px;
+	bottom: 50px;
 	width: 300px;
-	height: 136px;
+	height: 110px;
 	border-style: solid;
-
 	border-width: 2px;
 	border-color: #106BA7;
 	margin: 0px;
@@ -2455,12 +2456,12 @@ button {
 
 .linkmenu1 {
 	float: left;
-	margin-left: ;
+
 	position: relative;
 	right: 0px;
-	bottom: 40px;
+	bottom: 50px;
 	width: 300px;
-	height: 136px;
+	height: 110px;
 	border-style: solid;
 	border-left: #106BA7;
 	border-width: 2px;
@@ -2471,12 +2472,28 @@ button {
 
 .linkmenu2 {
 	float: left;
-	margin-left: ;
+
 	position: relative;
 	right: 0px;
-	bottom: 40px;
+	bottom: 50px;
 	width: 300px;
-	height: 136px;
+	height: 110px;
+	border-style: solid;
+	border-right: #106BA7;
+	border-width: 2px;
+	border-color: #106BA7;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.linkmenu3 {
+	float: left;
+
+	position: relative;
+	right: 0px;
+	bottom: 50px;
+	width: 300px;
+	height: 110px;
 	border-style: solid;
 	border-right: #106BA7;
 	border-width: 2px;
@@ -2500,12 +2517,11 @@ button {
 
 }
 
-.flag {
-	float: right;
-	top: 20px;
-	right: 60px;
-	position: relative;
+.linkmenu3:hover {
+	background-color: #0B264D;
+
 }
+
 
 
 .clear {
@@ -2515,20 +2531,26 @@ button {
 .contnavwrapper {
 	margin: auto;
 	width: 1200px;
+	height: 100px;
 }
 
 .linkmenu a p {
-	font-size: 30px;
+	font-size: 20px;
 	color: #2CCCF2;
 }
 
 .linkmenu1 a p {
-	font-size: 30px;
+	font-size: 20px;
 	color: #2CCCF2;
 }
 
 .linkmenu2 a p {
-	font-size: 30px;
+	font-size: 20px;
+	color: #2CCCF2;
+}
+
+.linkmenu3 a p {
+	font-size: 20px;
 	color: #2CCCF2;
 }
 
@@ -2538,8 +2560,8 @@ button {
 	top: 0px;
 	left: -7px;
 	width: 100%;
-	max-width: ;
-	height: 820px;
+
+	height: 720px;
 
 	/* UI Properties */
 
@@ -2556,35 +2578,37 @@ button {
 	/* UI Properties */
 	font-weight: bold;
 	text-align: left;
-	font-family: 'montserratb', sans-serif;
-	font-size: 110px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 90px;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	opacity: 1;
-	float text-indent: 0px;
+	text-indent: 0px;
 	max-width: 800px;
 }
 
 .contwrapper h1 {
 	position: relative;
-	top: 0px;
+	top: 10px;
 	justify-content: left;
 
 }
 
 .text-slide p {
 
-	width: 600px;
-	height: 120px;
+	width: 550px;
+	height: 160px;
 	text-align: left;
-	font-family: 'montserratt', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 	font-size: 25px;
 	letter-spacing: 0px;
 	color: #FFFFFF;
 	opacity: 1;
 	position: relative;
-	top: 5px;
+	top: 0px;
+
+	text-justify: auto;
 }
 
 .contwrapper {
@@ -2598,12 +2622,12 @@ button {
 }
 
 .layer {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	margin-top: 0px;
 	left: 0;
 	width: 100%;
-	height: 820px;
+	height: 720px;
 
 }
 
@@ -2617,7 +2641,7 @@ button {
 	width: 237px;
 	height: 68px;
 	text-align: center;
-	font-family: 'montserratb', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	letter-spacing: 0px;
 	color: #17438E;
@@ -2634,16 +2658,16 @@ button {
 	height: 500px;
 	float: right;
 	position: relative;
-	bottom: 80px;
-	left: 90px;
-	display: ;
+	bottom: 240px;
+	left: 10px;
+
 	pointer-events: none;
 }
 
 .arrow img {
-	width: 500px;
-	height: 500px;
-	opacity: 0.7;
+	width: 700px;
+	height: 700px;
+	opacity: 1;
 
 }
 
@@ -2704,4 +2728,6 @@ button {
 .cont-text {
 	position: relative;
 	left: 100px;
+	top: 70px;
+
 }
