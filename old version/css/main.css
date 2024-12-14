@@ -2982,14 +2982,6 @@ button {
 
 @media (max-width: 768px) {
 
-	.slide {
-		height: 880px;
-	}
-
-	.layer {
-		height: 880px;
-	}
-
 	.hamburger-menu img {
 		margin-top: 5px;
 		width: 40px;
@@ -3001,26 +2993,6 @@ button {
 		right: 0;
 		left: 0;
 	}
-
-	.arrow img {
-		margin: 0 auto;
-	}
-
-	.slide {
-		display: block;
-
-	}
-
-	.text-slide {
-		width: fit-content;
-	}
-
-	.text-slide p {
-		width: 400px;
-
-	}
-
-
 }
 
 
