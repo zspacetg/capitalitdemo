@@ -2983,6 +2983,26 @@ button {
 
 }
 
+@media (max-width: 992px) {
+	.missao {
+		display: block;
+		ma
+	}
+
+	.grid1 p {
+		padding: 10px 5px;
+
+	}
+
+	.grid1,
+	.grid2 {
+		margin-bottom: 30px;
+	}
+
+	.section-inf {
+		;
+	}
+}
 
 @media (max-width: 768px) {
 
@@ -2997,9 +3017,12 @@ button {
 	.arrow {
 		margin-bottom: -100px;
 		margin-top: -50px;
+
 	}
 
-	.section-info {}
+	.text-slide {
+		margin-top: 100px;
+	}
 
 	.hamburger-menu img {
 		margin-top: 5px;
@@ -3029,6 +3052,10 @@ button {
 	.text-slide p {
 		width: 400px;
 
+	}
+
+	#sobre p {
+		margin-top: 20px;
 	}
 
 
