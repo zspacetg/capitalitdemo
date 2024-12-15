@@ -114,15 +114,15 @@
                 <img src="more.png" alt="Menu"> <!-- Ícone do Menu -->
             </div>
 
-            <!-- Dropdown do Menu Hamburguer -->
-            <div class="hamburger-dropdown" id="dropdownMenu">
-                <a href="#sobre">Sobre Nós</a>
-                <a href="#servicos">Soluções e Serviços</a>
-                <a href="#parceiros">Parceiros</a>
-                <a href="#contato">Contato</a>
-            </div>
-    </div><!--contnavwraper-->
 
+    </div><!--contnavwraper-->
+    <!-- Dropdown do Menu Hamburguer -->
+    <div class="hamburger-dropdown" id="dropdownMenu">
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Soluções e Serviços</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#contato">Contato</a>
+    </div>
     </nav><!--menu-->
 
     <div class="clear"></div>
@@ -132,13 +132,11 @@
     <!-- ============== start home section  ============== -->
     <div class="slide">
         <div class="layer"></div>
-        <div class="contwrapper">
+        <div class="contwrapper block">
             <div class="arrow" id="arrow">
                 <img src="capitlogo.png">
             </div>
             <div class="cont-text">
-
-
                 <div class="text-slide">
                     <p>Empresa especializada em oferecer soluções de segurança eficazes e inovadoras. Com o
                         intuito
@@ -148,12 +146,24 @@
                 </div>
                 <a href="#contact"><button>Contato</button></a>
             </div>
+        </div>
+        <div id="sobre" class="container none">
+            <img src="capitlogo.png" class=" arrow section-title wow fadeInDown">
+            <p class="section-info wow fadeInDown" data-wow-delay=".25s" style="color: white;">
+                Empresa especializada em oferecer soluções de segurança eficazes e inovadoras. Com o
+                intuito
+                de apoiar o sucesso de seus projetos, disponibilizamos soluções abrangentes para proteger
+                sua rede contra ameaças externas e internas, com o suporte de renomados fabricantes como
+                Kaspersky, Sophos e Vicarius.
+
+            </p>
 
         </div>
 
+
     </div><!--slide-->
     <div class="clear"></div>
-    <!-- ========= //End home section ========= -->
+    <!-- ========= //End home ?section ========= -->
 
 
     <section id="our-skills" class="ptt40 ptb40">
@@ -459,6 +469,46 @@
         const dropdown = document.getElementById('dropdownMenu');
         dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const slideSection = document.querySelector(".none");
+        const breakpoint = 768; // Viewport width desejada
+
+        function toggleSlideSection() {
+            if (window.innerWidth >= breakpoint) {
+                slideSection.style.display = "none"; // Oculta a seção
+            } else {
+                slideSection.style.display = "block"; // Exibe a seção
+            }
+        }
+
+        // Executa na inicialização e quando a janela é redimensionada
+        toggleSlideSection();
+        window.addEventListener("resize", toggleSlideSection);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const myDiv = document.querySelector(".block"); // Seleciona a div
+        const breakpointMin = 768;  // Largura mínima da tela
+        const breakpointMax = 4000; // Largura máxima da tela
+        const breakpointMid = 1380; // Largura média da tela
+
+        function toggleDivVisibility() {
+            if (window.innerWidth >= breakpointMin && window.innerWidth <= breakpointMid) {
+                myDiv.style.display = "block"; // Mostra a div
+            } else if (window.innerWidth >= breakpointMin && window.innerWidth <= breakpointMax) {
+                myDiv.style.display = "grid";  // Esconde a div
+            } else {
+                myDiv.style.display = "none";  // Esconde a div
+            }
+        }
+
+        // Executa na inicialização e quando a janela é redimensionada
+        toggleDivVisibility();
+        window.addEventListener("resize", toggleDivVisibility);
+    });
 </script>
 
 </html>
