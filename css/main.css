@@ -2699,6 +2699,7 @@ button {
 	float: right;
 	position: relative;
 	pointer-events: none;
+	left: 35px;
 }
 
 .arrow img {
@@ -2962,6 +2963,7 @@ button {
 		align-items: center;
 		height: 50%;
 		margin-top: 40px;
+		left: 0px;
 	}
 
 	.arrow img {
