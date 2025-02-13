@@ -1514,7 +1514,7 @@ a:focus {
 .comments-form {
 	background-color: #ECEDED;
 	border-bottom: #106BA7, solid, 3px;
-	height: 400px;
+	height: fit-content;
 }
 
 .comments-form .section-title {
@@ -2871,8 +2871,8 @@ button {
 }
 
 #cont-loc {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 
 }
 
